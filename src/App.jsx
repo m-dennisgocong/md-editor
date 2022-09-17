@@ -6,6 +6,10 @@ function App() {
   const [inputText, setInputText] = useState("");
   const [singleView, setSingleView] = useState(true);
 
+  function handleChange(event){
+    setInputText(event.target.value);
+  }
+
   return (
     <div className="App">
       <header>
@@ -16,7 +20,8 @@ function App() {
         </ul>
       </header>
       <main>
-        <TextEditor />
+        <TextEditor handleChange={handleChange} />
+        <div>{inputText}</div>
         {!singleView && <PreviewText />}
       </main>
     </div>
