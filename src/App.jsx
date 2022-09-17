@@ -21,8 +21,7 @@ function App() {
       </header>
       <main>
         <TextEditor handleChange={handleChange} />
-        <div>{inputText}</div>
-        {!singleView && <PreviewText />}
+        {singleView && <PreviewText inputText={inputText}/>}
       </main>
     </div>
   )
