@@ -1,60 +1,28 @@
 import { useState } from 'react'
 import TextEditor from './components/TextEditor';
 import PreviewText from './components/PreviewText';
-
+import HeaderMenu from './components/HeaderMenu';
+import { initialText } from './components/initialText';
 function App() {
 
-  const initialText = 
-  ` 
-  # H1
-  ## H2
-  ### H3
-  
-  **bold text**
-
-  *italicized text*
-
-  > blockquote
-
-  1. First item
-  2. Second item
-  3. Third item
-
-  - First item
-  - Second item
-  - Third item
-
-  \` inline code\`
-
-  \`\`\`
-    function display(){
-      console.log("blocks code");
-    }
-  \`\`\`
-
-  [md-edit](https://github.com/m-dennisgocong/md-editor)
-
-  ![alt text](./../public/markdown_logo.png)
-  `;
   const [inputText, setInputText] = useState(initialText);
-  const [singleView, setSingleView] = useState(true);
+  const [typeView, setTypeView] = useState(true);
 
   function getText(text){
     setInputText(text);
   }
+  function getView(view){
+    setTypeView(view);
+  }
 
   return (
     <div className="App">
-      <header>
-        <ul>
-          <li>Editor</li>
-          <li>Preview</li>
-          <li>Toolbox</li>
-        </ul>
-      </header>
+      <HeaderMenu getView={getView}/>
       <main>
-        <TextEditor getText={getText} inputText={inputText}/>
-        {singleView && <PreviewText inputText={inputText}/>}
+        {typeView ? 
+          <TextEditor getText={getText} inputText={inputText}/> :
+          <PreviewText inputText={inputText}/>
+        }
       </main>
     </div>
   )
