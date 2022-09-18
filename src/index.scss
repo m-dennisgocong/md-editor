@@ -1,4 +1,7 @@
 @import './App.module.scss';
+@import './scss/Header.module.scss';
+@import './scss/TextEditor.module.scss';
+@import './scss/PreviewText.module.scss';
 
 *,*::before,*::after{
   padding: 0;
@@ -8,8 +11,6 @@
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
