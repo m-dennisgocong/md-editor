@@ -7,7 +7,11 @@ header{
            padding: 0.3em;
         }
     }
-    .toolbox{
+    #toolbox{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.5em;
         position: fixed;
         top: 0;
         right: 0;
@@ -30,7 +34,7 @@ header{
                 gap: 1em;
             }
         }
-        .toolbox{
+        #toolbox{
             position: unset;
             transform: translateX(0);
         }
