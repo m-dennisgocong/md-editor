@@ -1,9 +1,17 @@
-const TextEditor = ({handleChange}) => {
+import { useState } from "react";
+
+const TextEditor = ({getText, inputText}) => {
+
+    const [text, setText] = useState(inputText);
+
+    function handleChange(event){
+        const {value} = event.target
+        setText(value);
+        getText(value); // callback function
+    }
 
     return(
-        <>
-            <textarea name="editor" id="editor" onChange={handleChange} cols="45" rows="35"></textarea>
-        </>
+        <textarea name="editor" id="editor" onChange={handleChange} value={text} type="text"></textarea> 
     );
 }
 export default TextEditor;
