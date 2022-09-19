@@ -1,15 +1,24 @@
 import oneScreenIcon from './../assets/singleScreen.svg'
 import splitScreenIcon from './../assets/splitScreen2.svg'
-const HeaderMenu = ({getView}) => {
+const HeaderMenu = ({getView, setScreen}) => {
 
     function changeView(event){
-        event.preventDefault()
-        const tool = event.target.className
-        if(tool !== "Editor"){
-          getView(!true)
-        }else{
-          getView(!false)
-        }
+      event.preventDefault()
+      const tool = event.target.className;
+      if(tool === "Editor"){
+        getView(true)
+      }else{
+        getView(false)
+      }
+    }
+    function changeScreen(event){
+      event.preventDefault();
+      const screen = event.target.className;
+      if(screen === 'singleScreen'){
+        setScreen(true);
+      }else{
+        setScreen(false);
+      }
     }
 
     return (
@@ -20,10 +29,12 @@ const HeaderMenu = ({getView}) => {
             <li><a href="" onClick={changeView} className="Preview">Preview</a></li>
           </ul>
         </nav>
-        <div id="toolbox">  
-          <a href="" className='single-screen'><img src={oneScreenIcon} alt="single screen" /></a>
-          <a href="" className='split-screen'><img src={splitScreenIcon} alt="split screen" /></a>
+        <div id="toolbox">
+          <img onClick={changeScreen} className="singleScreen" src={oneScreenIcon} alt="single screen" />
+          <img onClick={changeScreen} className="splitScreen" src={splitScreenIcon} alt="split screen" />
         </div>
+        
+        
     </header>
     );
 }
