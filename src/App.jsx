@@ -7,6 +7,7 @@ function App() {
 
   const [inputText, setInputText] = useState(initialText);
   const [typeView, setTypeView] = useState(true);
+  const [screenType, setScreenType] = useState(false);
 
   function getText(text){
     setInputText(text);
@@ -14,16 +15,27 @@ function App() {
   function getView(view){
     setTypeView(view);
   }
+  function setScreen(screen){
+    setScreenType(screen);
+  }
+
 
   return (
     <div className="App">
-      <HeaderMenu getView={getView}/>
-      <main>
-        {typeView ? 
+      <HeaderMenu getView={getView} setScreen={setScreen}/>
+      {screenType ? 
+        <main className='singleScreen'>
+          {typeView ? 
           <TextEditor getText={getText} inputText={inputText}/> :
+          <PreviewText inputText={inputText}/>}
+        </main>
+          :
+        <main className='dualScreen'>
+          <TextEditor getText={getText} inputText={inputText}/>
           <PreviewText inputText={inputText}/>
-        }
-      </main>
+        </main>
+      } 
+      
     </div>
   )
 }
