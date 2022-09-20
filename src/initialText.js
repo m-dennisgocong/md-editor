@@ -25,6 +25,6 @@ export const initialText =
   }
 \`\`\`
 
-![alt text](./public/markdown_logo.png)
+![alt text](./markdown_logo.png)
 
 [md-edit](https://github.com/m-dennisgocong/md-editor)`;
