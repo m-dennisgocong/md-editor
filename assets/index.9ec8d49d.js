@@ -118,6 +118,6 @@ Please report this to https://github.com/markedjs/marked.`,t.silent)return"<p>An
   }
 \`\`\`
 
-![alt text](./public/markdown_logo.png)
+![alt text](./markdown_logo.png)
 
 [md-edit](https://github.com/m-dennisgocong/md-editor)`;function Np(){const[e,t]=At.exports.useState($p),[n,r]=At.exports.useState(!0),[l,i]=At.exports.useState(!1);function o(y){t(y)}function u(y){r(y)}function s(y){i(y)}const f=me(up,{getText:o,inputText:e}),h=me(Cp,{inputText:e});return Zn("div",{className:"App",children:[me(Pp,{getView:u,setScreen:s}),l?me("main",{children:n?f:h}):Zn("main",{children:[n&&f,h]})]})}ci.createRoot(document.getElementById("root")).render(me(Np,{}));
