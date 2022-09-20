@@ -1,11 +1,10 @@
-@import './abstracts/_variables.module.scss';
 textarea{
     width: 100%;
     height: 100%;
     outline: none;
     resize: none;
-    background-color: $color-textarea-bg;
-    color: $color-textarea-text;
+    background-color: var(--color-textarea-bg);
+    color: var(--color-textarea-text);
     padding-top: 0.7em;
     padding-left: 0.7em;
 }

@@ -1,18 +1,23 @@
-@import './App.module.scss';
-@import './scss/Header.module.scss';
-@import './scss/TextEditor.module.scss';
-@import './scss/PreviewText.module.scss';
-
 *,*::before,*::after{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+:root {
+  --color-primary-bg: #212327;
+  --color-header-bg: #13171d;
+  --color-header-text: rgba(255,255,255);
+  --color-textarea-bg:#0d1117;
+  --color-textarea-text: #c9d1d9;
+  --color-preview-bg: #e2ebf3;
+}
+
 body {
-  background-color: $color-primary-bg;
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+  background-color: var(--color-primary-bg);
 }
 

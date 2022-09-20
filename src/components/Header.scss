@@ -1,7 +1,5 @@
-@import './abstracts/_variables.module.scss';
-
 header{
-    background-color: $color-header-bg;
+    background-color: var(--color-header-bg);
     padding: 0.5em 1.5em;
     nav{
         
@@ -23,7 +21,7 @@ header{
         transform: translateX(100%);
     }
     a{
-        color: $color-header-text;
+        color: var(--color-header-text);
         text-decoration: none;
     }
 }

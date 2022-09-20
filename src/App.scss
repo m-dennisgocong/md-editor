@@ -1,9 +1,7 @@
-@import './scss/abstracts/_variables.module.scss';
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  background-color: $color-primary-bg;
+  background-color: var(--color-primary-bg);
   font-family: 'Roboto', sans-serif;
 }
 main{

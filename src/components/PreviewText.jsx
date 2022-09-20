@@ -1,5 +1,6 @@
 import { marked } from 'marked';
 import Prism from 'prismjs';
+import './PreviewText.scss';
 
 const renderer = new marked.Renderer();
 renderer.code = function(code, lang, escaped) {

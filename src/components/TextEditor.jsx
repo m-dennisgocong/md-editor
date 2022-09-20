@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './TextEditor.scss';
 
 const TextEditor = ({getText, inputText}) => {
 

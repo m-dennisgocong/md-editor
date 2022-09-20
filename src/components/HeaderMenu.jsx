@@ -1,5 +1,6 @@
 import oneScreenIcon from './../assets/singleScreen.svg'
 import splitScreenIcon from './../assets/splitScreen2.svg'
+import './Header.scss';
 const HeaderMenu = ({getView, setScreen}) => {
 
     function changeView(event){
@@ -25,8 +26,8 @@ const HeaderMenu = ({getView, setScreen}) => {
     <header>
         <nav>
           <ul>
-            <li><a href=""  onClick={changeView} className="Editor">Editor</a></li>
-            <li><a href="" onClick={changeView} className="Preview">Preview</a></li>
+            <li><a href="#"  onClick={changeView} className="Editor">Editor</a></li>
+            <li><a href="#" onClick={changeView} className="Preview">Preview</a></li>
           </ul>
         </nav>
         <div id="toolbox">
