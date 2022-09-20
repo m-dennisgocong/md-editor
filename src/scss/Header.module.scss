@@ -1,5 +1,10 @@
+@import './abstracts/_variables.module.scss';
+
 header{
+    background-color: $color-header-bg;
+    padding: 0.5em 1.5em;
     nav{
+        
         ul{
            display: flex;
            list-style-type: none;
@@ -11,15 +16,15 @@ header{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        gap: 0.5em;
+
         position: fixed;
         top: 0;
         right: 0;
         transform: translateX(100%);
     }
     a{
+        color: $color-header-text;
         text-decoration: none;
-        color: #000;
     }
 }
 
@@ -30,13 +35,20 @@ header{
         justify-content: space-between;
         nav{
             ul{
-                justify-content:flex-start;
-                gap: 1em;
+                gap: 2em;
             }
         }
         #toolbox{
             position: unset;
             transform: translateX(0);
+            gap: 1em;
+            padding: 0.3rem 1rem;
+            background-color: #fff;
+            border-radius: 0.4em;
+            img{
+                cursor: pointer;
+                width: 1em;
+            }
         }
     }
 }
