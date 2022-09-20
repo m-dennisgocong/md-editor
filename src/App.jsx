@@ -19,23 +19,22 @@ function App() {
     setScreenType(screen);
   }
 
-
+  const editText = <TextEditor getText={getText} inputText={inputText}/>;
+  const previewText = <PreviewText inputText={inputText}/>;
   return (
     <div className="App">
       <HeaderMenu getView={getView} setScreen={setScreen}/>
+      
       {screenType ? 
-        <main className='singleScreen'>
-          {typeView ? 
-          <TextEditor getText={getText} inputText={inputText}/> :
-          <PreviewText inputText={inputText}/>}
+        <main>
+          {typeView ? editText : previewText}
         </main>
           :
-        <main className='dualScreen'>
-          <TextEditor getText={getText} inputText={inputText}/>
-          <PreviewText inputText={inputText}/>
+        <main>
+          {typeView && editText}
+          {previewText}
         </main>
       } 
-      
     </div>
   )
 }
