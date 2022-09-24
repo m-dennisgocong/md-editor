@@ -4,9 +4,7 @@
 
 A simple markdown editor with live preview created with React
 
-## Live Demo
-
-https://m-dennisgocong.github.io/md-editor/
+Live Demo: https://m-dennisgocong.github.io/md-editor/
 
 ## Features
 
@@ -21,6 +19,10 @@ https://m-dennisgocong.github.io/md-editor/
 - [marked](https://marked.js.org/)
 - [prismjs](https://prismjs.com/)
 - Vite
+
+## Credits
+
+The color scheme of this project is base on github markdown editor
 
 ## General Info
 
