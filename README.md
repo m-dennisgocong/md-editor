@@ -20,10 +20,6 @@ Live Demo: https://m-dennisgocong.github.io/md-editor/
 - [prismjs](https://prismjs.com/)
 - Vite
 
-## Credits
-
-The color scheme of this project is base on github markdown editor
-
 ## General Info
 
 This is my project for [Front End Development Libraries](https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects/) coure on freeCodeCamp. The purpose of this challenge is to test out and showcase front-end skills.
@@ -31,6 +27,10 @@ This is my project for [Front End Development Libraries](https://www.freecodecam
 ## Screenshots
 
 <img src = "./public/md-editor-screenshot-1.png">
+
+## Credits
+
+The color scheme of this project is base on github markdown editor
 
 ## Run Locally
 
