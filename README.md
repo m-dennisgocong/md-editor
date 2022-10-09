@@ -2,7 +2,7 @@
 
 [![Live Demo](https://img.shields.io/badge/demo-online-green.svg)](https://m-dennisgocong.github.io/md-editor/) [![Current Version](https://img.shields.io/badge/version-1.0.0-green.svg)](https://github.com/m-dennisgocong/md-editor)
 
-A simple markdown editor with live preview created with React
+A simple markdown editor with a live preview, created with React
 
 Live Demo: https://m-dennisgocong.github.io/md-editor/
 
@@ -22,7 +22,7 @@ Live Demo: https://m-dennisgocong.github.io/md-editor/
 
 ## General Info
 
-This is my project for [Front End Development Libraries](https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects/) coure on freeCodeCamp. The purpose of this challenge is to test out and showcase front-end skills.
+This is my project for [Front End Development Libraries](https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects/) course on freeCodeCamp. The purpose of this challenge is to test out and showcase front-end skills.
 
 ## Screenshots
 
