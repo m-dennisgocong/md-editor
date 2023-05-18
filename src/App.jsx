@@ -2,7 +2,8 @@ import { useState } from 'react'
 import TextEditor from './components/TextEditor';
 import PreviewText from './components/PreviewText';
 import HeaderMenu from './components/HeaderMenu';
-import {initialText} from './initialText.js'
+import {initialText} from './initialText.js';
+import githubLogo from './assets/github-mark-white.svg'
 import './App.scss';
 function App() {
 
@@ -37,7 +38,7 @@ function App() {
         </main>
       }
       <footer>
-        <a href="https://github.com/m-dennisgocong/md-editor"><img src="./src/assets/github-mark-white.svg" alt="" /> Dennis Goc-ong</a>
+        <a href="https://github.com/m-dennisgocong/md-editor"><img src={githubLogo} alt="Github Logo" /> Dennis Goc-ong</a>
       </footer> 
     </div>
   )
