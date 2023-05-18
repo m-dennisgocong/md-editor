@@ -35,7 +35,10 @@ function App() {
           {typeView && editText}
           {previewText}
         </main>
-      } 
+      }
+      <footer>
+        <a href="https://github.com/m-dennisgocong/md-editor"><img src="./src/assets/github-mark-white.svg" alt="" /> Dennis Goc-ong</a>
+      </footer> 
     </div>
   )
 }
